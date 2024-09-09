@@ -73,7 +73,7 @@ button:active{
 .dados {
     width: 29vw;
     padding: 30px;
-    display: flex;
+    display: none;
     background-color: rgb(235, 235, 235);
     border-radius: 8px;
     border: 2px solid rgb(158, 158, 158);
