@@ -8,31 +8,36 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <h1>Previsão do tempo no mundo</h1>
-    <div class="pesquisar">
-      <fieldset>
-        <legend>Escolha um lugar</legend>
-        <input id="lugar-esperado" type="text" />
-      </fieldset>
-      <button onclick="getWeather()">Pesquisar</button>
-    </div>
-    <div class="dados">
-      <div class="temperatura-principal">
-        <p>Temperatura</p>
-        <h2 id="temperatura"></h2>
+    <header>
+      <h1>Previsão do tempo no mundo</h1>
+    </header>
+    <main>
+      <div class="pesquisar">
+        <h2>Escolha algum lugar do mundo</h2>
+        <input
+          id="lugar-esperado"
+          type="text"
+          placeholder="Digite o nome da cidade..."
+        />
+        <button onclick="getWeather()">Pesquisar</button>
       </div>
-      <div class="minima-e-maxima">
-        <div class="card-minima">
-          <p>Mínima</p>
-          <h2 id="minima"></h2>
+      <div class="dados">
+        <div class="temperatura-principal">
+          <p>Temperatura Atual</p>
+          <h2 id="temperatura"></h2>
         </div>
-
-        <div class="card-maxima">
-          <p>Maxima</p>
-          <h2 id="maxima"></h2>
+        <div class="minima-e-maxima">
+          <div class="card-minima">
+            <p>Mínima</p>
+            <h2 id="minima"></h2>
+          </div>
+          <div class="card-maxima">
+            <p>Máxima</p>
+            <h2 id="maxima"></h2>
+          </div>
         </div>
       </div>
-    </div>
-    <script src="script.js"></script>
+      <script src="script.js"></script>
+    </main>
   </body>
 </html>
